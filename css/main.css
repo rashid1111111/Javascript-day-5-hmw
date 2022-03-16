@@ -6,6 +6,11 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -16,12 +21,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 0;
-    margin: 0;
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: rgb(70, 175, 236);
     color: #222;
 }
 
@@ -43,6 +46,68 @@ img {
 
 
 /* MAIN-CONTENT */
-.main-content {
-    flex-grow: 1;
+.form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+.form-value {
+    border: none;
+    border: 2px solid rgb(52, 241, 52);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #fff;
+}
+
+* :focus {
+    outline: 2px dashed rgb(238, 205, 121);
+    outline-offset: 3px;
+}
+
+.form-btn {
+    padding: 8px;
+    border: none;
+    border: 2px solid rgb(248, 144, 144);
+    color: #fff;
+    background-color: rgb(248, 144, 144);
+}
+
+.form-btn:hover {
+    background-color: white;
+    color: rgb(248, 144, 144);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 1000px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #111;
+}
+
+.item-span {
+    text-align: center;
+}
+
+.item-span:not(:last-child) {
+    border-right: 2px solid #222;
+}
+
+li span {
+    width: 250px;
+    padding-left: 5px;
 }
