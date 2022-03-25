@@ -13,23 +13,38 @@
                 <input class="form-value last-name" type="text" placeholder="last-name...">
                 <input class="form-value age" type="number" placeholder="age...">
                 <select class="form-value form-select">
-                    <option>design</option>
+                    <option selected disabled>study</option>
                     <option>frontEnd</option>
-                    <option>backend</option>
+                    <option>backEnd</option>
                     <option>android</option>
                     <option>ios</option>
                 </select>
                 <button class="form-btn" type="submit">submit</button>
             </form>
 
-            <ul class="list">
-                <li class="item">
-                    <span class="item-span">First Name</span>
-                    <span class="item-span">Last Name</span>
-                    <span class="item-span">Age</span>
-                    <span class="item-span">Study</span>
-                </li>
-            </ul>
+            <div class="new">
+                <input class="form-value search" type="text" placeholder="search...">
+                <select class="form-value filter">
+                    <option selected disabled>filter</option>
+                    <option>increase</option>
+                    <option>decrease</option>
+                </select>
+                <button class="form-btn button-filter" type="submit" >filter</button>
+            </div>
+
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th class="th">#</th>
+                        <th class="th">Ism</th>
+                        <th class="th">Familiya</th>
+                        <th class="th">Yosh</th>
+                        <th class="th">Study</th>
+                    </tr>
+                </thead>
+                <tbody class="thbody">
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="/index.js"></script>
