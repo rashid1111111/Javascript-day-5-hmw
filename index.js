@@ -7,9 +7,7 @@ const list = document.querySelector('.thbody')
 const search = document.querySelector('.search')
 const filter = document.querySelector('.filter')
 const buttonFilter = document.querySelector('.button-filter')
-let information = [
-    {id: 1, name: 'Rashidbek', lastName: 'Xoldarov', age: 22, study: 'frontEnd'}
-]
+let information = []
 
 createEl(information, list)
 
